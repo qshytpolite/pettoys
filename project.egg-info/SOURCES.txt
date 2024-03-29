@@ -1,0 +1,13 @@
+setup.py
+pettoys/__init__.py
+pettoys/items.py
+pettoys/middlewares.py
+pettoys/pipelines.py
+pettoys/settings.py
+pettoys/spiders/__init__.py
+pettoys/spiders/pet_toys.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
