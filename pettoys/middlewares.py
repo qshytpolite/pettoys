@@ -10,7 +10,8 @@ from random import randint
 import requests
 
 # useful for handling different item types with a single interface
-from itemadapter import is_item, ItemAdapter
+from itemadapter.utils import is_item
+from itemadapter.adapter import ItemAdapter
 
 
 class ScrapeOpsFakeBrowserHeadersMiddleware:
@@ -52,6 +53,8 @@ class ScrapeOpsFakeBrowserHeadersMiddleware:
         random_header = self._get_random_header()
         for key, val in random_header.items():
             request.headers[key] = val
+
+
 class PettoysSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
